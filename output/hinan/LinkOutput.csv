@@ -1,0 +1,1 @@
+Time,SimulationTime,LinkID,CarTrafficVolume(OD),CarTrafficVolume(DO),CarVelocity(km/h)(OD),CarVelocity(km/h)(DO),CarVelocity(km/h),TrafficVolume,Velocity(km/h),ONodeID,DNodeID,O_Lon,O_Lat,D_Lon,D_Lat

@@ -1,0 +1,11 @@
+services:
+  hongo_cpp:
+    build:
+      context: .
+    image: hongo_cpp
+    container_name: hongo_cpp
+    command: [ '/app/build/Hongo', '${INPUT}', '${OUTPUT}' ]
+    working_dir: /app
+    volumes:
+      - ./input:/app/input:ro
+      - ./output:/app/output:rw

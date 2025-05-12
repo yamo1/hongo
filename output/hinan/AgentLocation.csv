@@ -1,0 +1,1 @@
+Time,SimulationTime,AgentID,Mode,Lon,Lat,Velocity(km/h),Acceleration(m/s),LinkID,LaneID,X,InNodeLane,CarFollowing,SignalStop,Transportation

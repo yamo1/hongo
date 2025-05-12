@@ -1,0 +1,10 @@
+{
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "cmake.configureOnOpen": false,
+  "C_Cpp.clang_format_fallbackStyle": "Google",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "cSpell.words": ["Hongo"]
+}
