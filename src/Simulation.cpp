@@ -19,6 +19,8 @@
 #include "Station.hpp"
 #include "Utility.hpp"
 
+#include "config.h"
+
 namespace Hongo {
 
 const bool Agent::ecursion = false;
@@ -890,7 +892,7 @@ void Simulation::writeLinkOutput() {
                << carTrafficVolume.first << "," << carTrafficVolume.second
                << "," << carVelocities.first * 3.6 << ","
                << carVelocities.second * 3.6 << "," << carVelocity * 3.6 << ","
-               << trafficVolume << "," << velocity * 3.6 << ","
+               << trafficVolume*AGENT_PERSONS << "," << velocity * 3.6 << ","
                << pair.second->getONodeId() << "," << pair.second->getDNodeId()
                << "," << std::fixed << std::setprecision(8) << ox << "," << oy
                << "," << dx << "," << dy << std::endl;

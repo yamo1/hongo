@@ -13,6 +13,8 @@
 #include "Station.hpp"
 #include "Utility.hpp"
 
+#include "config.h"
+
 namespace Hongo {
 
 Link::Link(int _id, const std::shared_ptr<Node> &_oNode,
@@ -312,8 +314,8 @@ void Link::removeAgent(int agentId, double simTime) {
       if (simTime - agentInTime.at(agentId) > 0) carTrafficVolume.second++;
     }
   } else if (mode == 3) {  // 歩行者
-    accumTravelTime += std::max(0.0, simTime - agentInTime.at(agentId));
-    if (simTime - agentInTime.at(agentId) > 0) trafficVolume++;
+    accumTravelTime += std::max(0.0, simTime - agentInTime.at(agentId)) * AGENT_PERSONS;
+    if (simTime - agentInTime.at(agentId) > 0) trafficVolume+=AGENT_PERSONS;
   }
   agentInTime.erase(agentId);
   agentMap.erase(agentId);

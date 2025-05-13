@@ -21,7 +21,7 @@ int main(int argc, const char* argv[]) {
   std::string outputDir = argv[2];
   double timestep = 1.0;
   double simulationStartTime = 3600.0 * 0;
-  double simulationEndTime = 3600.0 * 16;
+  double simulationEndTime = 3600.0 * 27;
 
   int planeNum = 4;  // 平面直角座標の番号
 
